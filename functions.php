@@ -21,6 +21,7 @@ abstract class Ugallu
     {
         add_action( 'after_setup_theme', array( __CLASS__, 'after_setup_theme' ) );
         add_filter( 'theme_mod_color_primary', array( __CLASS__, 'color_primary' ) );
+        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ) );
     }
 
     /**
@@ -34,6 +35,7 @@ abstract class Ugallu
 
         add_theme_support( 'custom-header', array(
             'default-image' => '',
+            'default-text-color'     => '584338',
         ) );
     }
 
@@ -43,6 +45,15 @@ abstract class Ugallu
     static function color_primary( $hex )
     {
         return $hex ? $hex : 'a82626';
+    }
+
+    /**
+     * Enqueue Fonts
+     */
+    static function enqueue_fonts()
+    {
+        wp_enqueue_style( 'google-fonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
+        wp_enqueue_style( 'google-fonts-yellowtail', 'http://fonts.googleapis.com/css?family=Yellowtail' );
     }
 
 }

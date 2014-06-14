@@ -12,10 +12,14 @@
  * Template:    stargazer
  */
 
+@import "css/fun/2.1-font-family.css";
+@import "css/fun/2.2-color.css";
+
 /* General
 ----------------------------------------------------- */
 
 body {
+    background: #fcf9f4;
     border-bottom-width: 6px;
     border-top-width: 6px;
 }
@@ -23,9 +27,7 @@ body {
 /* Container
 ----------------------------------------------------- */
 
-#container > .wrap {
-    background: #fcf9f4;
-}
+
 
 /* Header
 ----------------------------------------------------- */
