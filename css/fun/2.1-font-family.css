@@ -1,0 +1,64 @@
+/**
+ * 2.1 - Font Family Definitions
+ *
+ * This theme operates with three dinstinct font rules.  The "primary" font is used for the majority of 
+ * text throughout the theme.  The "secondary" font is used for handling secondary use cases.  The 
+ * "headlines" font is specific to h1-h6 headers (with the exception of #site-description).
+ *
+ * If building a child theme for public release with custom fonts, the child theme should define only the 
+ * font rules it needs.  Copy the specific section below that you want to overwrite into the child theme. 
+ * Make sure to include the `.font-*` class as this will maintain forward compatibility with future 
+ * changes in the parent theme.
+ */
+
+/* ====== Primary Font ====== */
+
+/*.font-primary,*/
+/*body,*/
+/*input,*/
+/*textarea,*/
+/*.label-checkbox,*/
+/*.label-radio,*/
+/*.required,*/
+/*#site-description,*/
+/*#reply-title small { font-family: 'Droid Serif', 'Lora', 'Georgia', serif }*/
+
+/* ====== Secondary Font ====== */
+
+/*.font-secondary,*/
+/*dt,*/
+/*th,*/
+/*legend,*/
+/*label,*/
+/*input[type="submit"],*/
+/*input[type="reset"],*/
+/*input[type="button"],*/
+/*button,*/
+/*select,*/
+/*option,*/
+/*.wp-caption-text,*/
+/*.gallery-caption,*/
+/*.mejs-controls,*/
+/*.wp-playlist-item-meta,*/
+/*.entry-byline,*/
+/*.entry-footer,*/
+/*.chat-author cite,*/
+/*.chat-author,*/
+/*.comment-meta,*/
+/*.menu,*/
+/*.breadcrumb-trail,*/
+/*.media-info .prep,*/
+/*.comment-reply-link,*/
+/*.comment-reply-login,*/
+/*.clean-my-archives .day,*/
+/*.whistle-title { font-family: 'Open Sans', Arial, sans-serif }*/
+
+/* ====== Headlines Font ====== */
+
+/*.font-headlines,*/
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4,*/
+/*h5,*/
+/*h6 { font-family: 'Open Sans', Arial, sans-serif }*/
