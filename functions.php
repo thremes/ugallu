@@ -34,9 +34,12 @@ abstract class Ugallu
         ) );
 
         add_theme_support( 'custom-header', array(
-            'default-image' => '',
-            'default-text-color'     => '584338',
+            'default-image'      => '',
+            'default-text-color' => '584338',
         ) );
+
+        remove_filter( 'theme_mod_background_color', 'stargazer_background_color', 95 );
+        add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 95 );
     }
 
     /**
@@ -54,6 +57,14 @@ abstract class Ugallu
     {
         wp_enqueue_style( 'google-fonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
         wp_enqueue_style( 'google-fonts-yellowtail', 'http://fonts.googleapis.com/css?family=Yellowtail' );
+    }
+
+    /**
+     * If the color is `fcf9f4`, return an empty string for the background color.
+     */
+    function background_color( $color )
+    {
+        return 'fcf9f4' === $color ? '' : $color;
     }
 
 }

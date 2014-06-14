@@ -11,7 +11,6 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Template:    stargazer
  */
-
 @import "css/fun/2.1-font-family.css";
 @import "css/fun/2.2-color.css";
 
@@ -19,20 +18,14 @@
 ----------------------------------------------------- */
 
 body {
-    background: #fcf9f4;
     border-bottom-width: 6px;
     border-top-width: 6px;
 }
 
-/* Container
------------------------------------------------------ */
-
-
-
 /* Header
 ----------------------------------------------------- */
 
-#header {
+body.custom-background #header {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1e3cc), color-stop(100%, #fcf9f4));
     background-image: -webkit-linear-gradient(top, #f1e3cc, #fcf9f4);
     background-image: -moz-linear-gradient(top, #f1e3cc, #fcf9f4);
