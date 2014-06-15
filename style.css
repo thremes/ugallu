@@ -25,7 +25,7 @@ body {
 /* Header
 ----------------------------------------------------- */
 
-body.custom-background #header {
+#header {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1e3cc), color-stop(100%, #fcf9f4));
     background-image: -webkit-linear-gradient(top, #f1e3cc, #fcf9f4);
     background-image: -moz-linear-gradient(top, #f1e3cc, #fcf9f4);

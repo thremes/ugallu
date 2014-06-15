@@ -12,10 +12,15 @@
 
 /* ====== color: #7f726b ====== */
 
-body,
+body {
+    color: #7F726B
+}
+
+/* ====== color: #B2AAA6 ====== */
+
 .media-shortcode-extend .media-info,
 .wp-playlist-dark .wp-playlist-item {
-    color: #7f726b
+    color: #B2AAA6;
 }
 
 /* ====== border-color: rgba(0, 0, 0, 0.1) ====== */
@@ -70,29 +75,31 @@ label:hover,
     color: #584338
 }
 
-/* ====== color: #858585 ====== */
+/* ====== color: #7f726b ====== */
 
-/*caption,*/
-/*td,*/
-/*label,*/
-/*input,*/
-/*textarea,*/
-/*select,*/
-/*.gallery .gallery-caption,*/
-/*.page-links,*/
-/*.loop-pagination,*/
-/*.loop-nav,*/
-/*.widget_recent_entries .post-date,*/
-/*.gallery-count,*/
-/*.comment-respond .must-log-in,*/
-/*.comment-respond .logged-in-as,*/
-/*.comments-closed,*/
-/*.comment-notes,*/
-/*.form-allowed-tags,*/
-/*.whistles-tabs-nav li a,*/
-/*.whistles-toggle .whistle-title,*/
-/*.whistles-accordion .whistle-title,*/
-/*.wp-playlist-dark .wp-playlist-item-meta { color: #858585 }*/
+caption,
+td,
+label,
+input,
+textarea,
+select,
+.gallery .gallery-caption,
+.page-links,
+.loop-pagination,
+.loop-nav,
+.widget_recent_entries .post-date,
+.gallery-count,
+.comment-respond .must-log-in,
+.comment-respond .logged-in-as,
+.comments-closed,
+.comment-notes,
+.form-allowed-tags,
+.whistles-tabs-nav li a,
+.whistles-toggle .whistle-title,
+.whistles-accordion .whistle-title,
+.wp-playlist-dark .wp-playlist-item-meta {
+    color: #7F726B;
+}
 
 /* ====== background: #252525 ====== */
 
@@ -126,7 +133,7 @@ html,
 #container > .wrap,
 #reply-title small a,
 .whistles-tabs .whistles-tabs-nav li[aria-selected="true"] a {
-    background: #fcf9f4
+    background: #FCF9F4
 }
 
 /* ====== Other colors ====== */
@@ -153,7 +160,7 @@ h5 {
 
 code {
     color: #584338;
-    background: #eee8df;
+    background: #EEE8DF;
 }
 
 tr,
@@ -164,43 +171,52 @@ td {
 }
 
 td {
-    background: #eee8df
+    background: #EEE8DF
 }
 
-/*input[type="number"],*/
-/*input[type="date"],*/
-/*input[type="datetime"],*/
-/*input[type="datetime-local"],*/
-/*input[type="email"],*/
-/*input[type="month"],*/
-/*input[type="password"],*/
-/*input[type="search"],*/
-/*input[type="tel"],*/
-/*input[type="text"],*/
-/*input[type="time"],*/
-/*input[type="url"],*/
-/*input[type="week"],*/
-/*textarea,*/
-/*select { background: #f3f3f3; border-color: #e3e3e3; }*/
-/*input[type="date"]:focus,*/
-/*input[type="datetime"]:focus,*/
-/*input[type="datetime-local"]:focus,*/
-/*input[type="email"]:focus,*/
-/*input[type="month"]:focus,*/
-/*input[type="number"]:focus,*/
-/*input[type="password"]:focus,*/
-/*input[type="search"]:focus,*/
-/*input[type="tel"]:focus,*/
-/*input[type="text"]:focus,*/
-/*input[type="time"]:focus,*/
-/*input[type="url"]:focus,*/
-/*input[type="week"]:focus,*/
-/*textarea:focus,*/
-/*select:focus { color: #555; background: #efefef; border-color: #d3d3d3; }*/
+input[type="number"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+    background: #EEE8DF;
+    border-color: #CCC;
+}
+
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus,
+select:focus {
+    color: #555;
+    background: #EEE8DF;
+    border-color: #7F726B;
+}
+
 /*.wp-caption-text { color: #e3e3e3; background: rgba( 0, 0, 0, 0.75 ); }*/
 
 .gallery .gallery-icon a img {
-    background: #eee8df
+    background: #EEE8DF
 }
 
 .gallery-icon a:hover img {
@@ -219,7 +235,10 @@ td {
     /*#menu-secondary li a:hover { color: #fff; background: #191919; }*/
 }
 
-/*#site-title a:hover { border-bottom-color: #d3d3d3 }*/
+#site-title a:hover {
+    border-bottom-color: rgba(0,0,0,0.1)
+}
+
 .entry-title,
 .entry-title a {
     color: #584338
@@ -252,25 +271,37 @@ td {
 /*.format-chat .chat-speaker-20 .chat-author { color: #1abc9c }*/
 
 .loop-description {
-    color: #7f726b;
-    background: #eee8df;
+    color: #7F726B;
+    background: #EEE8DF;
 }
 
 li.ping,
 .comment-content {
-    background: #eee8df
+    background: #EEE8DF
 }
 
 #footer a {
     color: #584338
 }
 
-/*.clean-my-archives .comments-number { color: #aaa }*/
-/*.whistles-tabs-nav li a,*/
-/*.whistles-toggle .whistle-title,*/
-/*.whistles-accordion .whistle-title { background: #f3f3f3 }*/
-/*.whistles-tabs .whistles-tabs-nav li a:hover { background: #efefef }*/
-/*.whistles-tabs .whistles-tabs-nav li[aria-selected="true"] a { border-bottom-color: #fff }*/
+.clean-my-archives .comments-number {
+    color: #584338
+}
+
+.whistles-tabs-nav li a,
+.whistles-toggle .whistle-title,
+.whistles-accordion .whistle-title {
+    background: #EEE8DF
+}
+
+.whistles-tabs .whistles-tabs-nav li a:hover {
+    background: #D6D1C9
+}
+
+.whistles-tabs .whistles-tabs-nav li[aria-selected="true"] a {
+    border-bottom-color: #FCF9F4
+}
+
 /*.media-shortcode-extend .audio-info { border-color: #202020 }*/
 /*.media-shortcode-extend .media-info li,*/
 /*.wp-playlist-dark .wp-playlist-item { border-color: #353535 }*/
@@ -278,10 +309,13 @@ li.ping,
 /*.wp-playlist-dark .mejs-controls { border-color: #151515 }*/
 /*.mejs-time-rail .mejs-time-float { border-color: #454545 }*/
 /*.mejs-time-rail .mejs-time-float-corner { border-top-color: #fff }*/
-/*.whistles-toggle .whistle-title:hover,*/
-/*.whistles-toggle .whistle-title[aria-selected="true"],*/
-/*.whistles-accordion .whistle-title:hover,*/
-/*.whistles-accordion .whistle-title[aria-selected="true"] { background: #efefef }*/
+.whistles-toggle .whistle-title:hover,
+.whistles-toggle .whistle-title[aria-selected="true"],
+.whistles-accordion .whistle-title:hover,
+.whistles-accordion .whistle-title[aria-selected="true"] {
+    background: #D6D1C9
+}
+
 /*.mejs-time-rail .mejs-time-total,*/
 /*.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,*/
 /*.mejs-volume-button .mejs-volume-slider .mejs-volume-total { background: #454545 }*/
@@ -312,7 +346,7 @@ li.ping,
  */
 
 ::selection {
-    color: #fff; /* Don't combine with other elements. Breaks Firefox. */
+    color: #FFF; /* Don't combine with other elements. Breaks Firefox. */
 }
 
 /*blockquote,*/

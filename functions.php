@@ -38,7 +38,6 @@ abstract class Ugallu
             'default-text-color' => '584338',
         ) );
 
-        remove_filter( 'theme_mod_background_color', 'stargazer_background_color', 95 );
         add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 95 );
     }
 
@@ -64,7 +63,7 @@ abstract class Ugallu
      */
     function background_color( $color )
     {
-        return 'fcf9f4' === $color ? '' : $color;
+        return in_array( $color, array( '', 'fcf9f4' ) ) ? 'eee8df' : $color;
     }
 
 }
