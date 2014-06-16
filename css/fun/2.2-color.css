@@ -101,11 +101,16 @@ select,
     color: #7F726B;
 }
 
-/* ====== background: #252525 ====== */
+/* ====== background: #EEE8DF ====== */
 
-/*#menu-primary,*/
-/*#menu-primary .search-form > div,*/
-/*#footer,*/
+#menu-primary,
+#menu-primary .search-form > div,
+#footer {
+    background: #EEE8DF;
+}
+
+/* ====== background: #584338 ====== */
+
 .audio-shortcode-wrap,
 .media-shortcode-extend .media-info,
 .media-info-toggle,
@@ -121,13 +126,15 @@ select,
 
 /* ====== background: transparent ====== */
 
-/*hr,*/
-/*.mejs-container,*/
-/*.mejs-embed,*/
-/*.mejs-embed body,*/
-/*.mejs-overlay-button,*/
-/*.mejs-controls > .mejs-button button:hover,*/
-/*.mejs-controls > .mejs-button button:focus { background: transparent }*/
+hr,
+.mejs-container,
+.mejs-embed,
+.mejs-embed body,
+.mejs-overlay-button,
+.mejs-controls > .mejs-button button:hover,
+.mejs-controls > .mejs-button button:focus {
+    background: transparent
+}
 
 /* ====== background: #fcf9f4 ====== */
 
@@ -215,7 +222,10 @@ select:focus {
     border-color: #7F726B;
 }
 
-/*.wp-caption-text { color: #e3e3e3; background: rgba( 0, 0, 0, 0.75 ); }*/
+.wp-caption .wp-caption-text {
+    color: #DED9D7;
+    background: rgba(88, 67, 56, 0.7)
+}
 
 .gallery .gallery-icon a img {
     background: #EEE8DF
@@ -225,16 +235,33 @@ select:focus {
     background: #D6D1C9
 }
 
-/*#menu-primary .menu-toggle { color: rgba( 255, 255, 255, 0.75 ) }*/
-/*#menu-primary li a,*/
-/*#menu-secondary li li a { color: rgba( 255, 255, 255, 0.75 ) }*/
+#menu-primary .menu-toggle {
+    color: #584338
+}
+
+#menu-primary li a,
+#menu-secondary li li a {
+    color: #7F726B
+}
+
 @media only screen and (max-width: 799px) {
-    /*#menu-secondary .wrap,*/
-    /*#menu-primary .search-form > div { background: #1f1f1f }*/
-    /*#menu-primary li a,*/
-    /*#menu-secondary li a { color: rgba( 255, 255, 255, 0.75 ); background: #1f1f1f; border-color: #1c1c1c; }*/
-    /*#menu-primary li a:hover,*/
-    /*#menu-secondary li a:hover { color: #fff; background: #191919; }*/
+    #menu-secondary .wrap,
+    #menu-primary .search-form > div {
+        background: #EEE8DF
+    }
+
+    #menu-primary li a,
+    #menu-secondary li a {
+        color: #7F726B;
+        background: #EEE8DF;
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-primary li a:hover,
+    #menu-secondary li a:hover {
+        color: #584338;
+        background: #D6D1C9;
+    }
 }
 
 #site-title a:hover {
@@ -354,16 +381,43 @@ li.ping,
 /* Menu colors */
 
 @media only screen and (min-width: 800px) {
-    /*.menu li > ul::before { border-right-color: transparent; border-bottom-color: #252525; border-left-color: transparent; }*/
-    /*.menu li li > ul::before { border-top-color: transparent; border-bottom-color: transparent; }*/
-    /*.ltr .menu li li > ul::before { border-right-color: #252525 }*/
-    /*.rtl .menu li li > ul::before { border-left-color: #252525 }*/
-    /*#menu-primary   li li a,*/
-    /*#menu-secondary li li a { background: #1f1f1f; border-color: #1d1d1d; }*/
-    /*#menu-primary   ul ul li a:hover,*/
-    /*#menu-secondary ul ul li a:hover { background: #191919 }*/
-    /*#menu-primary .search-form .toggle::before { color: rgba( 255, 255, 255, 0.75 ) }*/
-    /*#menu-primary .search-form .toggle:hover::before { color: #fff }*/
+    .menu li > ul::before {
+        border-right-color: transparent;
+        border-bottom-color: #BEBAB2;
+        border-left-color: transparent;
+    }
+
+    .menu li li > ul::before {
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .ltr .menu li li > ul::before {
+        border-right-color: #BEBAB2
+    }
+
+    .rtl .menu li li > ul::before {
+        border-left-color: #BEBAB2
+    }
+
+    #menu-primary li li a,
+    #menu-secondary li li a {
+        background: #EEE8DF;
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-primary ul ul li a:hover,
+    #menu-secondary ul ul li a:hover {
+        background: #D6D1C9
+    }
+
+    #menu-primary .search-form .toggle::before {
+        color: #7F726B
+    }
+
+    #menu-primary .search-form .toggle:hover::before {
+        color: #584338
+    }
 }
 
 /* =/=/=/=/=/= End fun zone. =/=/=/=/=/= */
@@ -385,11 +439,6 @@ li.ping,
 /*input[type="reset"],*/
 /*input[type="button"],*/
 /*button,*/
-/*#menu-primary .menu-toggle:hover,*/
-/*#menu-primary   li.current-menu-item > a,*/
-/*#menu-primary   li a:hover,*/
-/*#menu-secondary li li a:hover,*/
-/*#menu-sub-terms li a,*/
 /*.page-links a,*/
 /*.page-links a:hover,*/
 /*.widget-title > .wrap,*/
@@ -424,6 +473,14 @@ li.ping,
 .wp-playlist-dark .wp-playlist-caption:hover,
 .wp-playlist-dark .wp-playlist-item:hover {
     color: #DED9D7
+}
+
+#menu-primary .menu-toggle:hover,
+#menu-primary li.current-menu-item > a,
+#menu-primary li a:hover,
+#menu-secondary li li a:hover,
+#menu-sub-terms li a {
+    color: #584338;
 }
 
 /* =/=/=/=/=/= End colors danger zone. =/=/=/=/=/= */

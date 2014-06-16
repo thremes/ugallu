@@ -22,6 +22,18 @@ body {
     border-top-width: 6px;
 }
 
+/* Menu Primary
+----------------------------------------------------- */
+
+#menu-primary,
+#menu-primary .search-form > div {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1e3cc), color-stop(100%, #fcf9f4));
+    background-image: -webkit-linear-gradient(top, #f1e3cc, #fcf9f4);
+    background-image: -moz-linear-gradient(top, #f1e3cc, #fcf9f4);
+    background-image: -o-linear-gradient(top, #f1e3cc, #fcf9f4);
+    background-image: linear-gradient(top, #f1e3cc, #fcf9f4);
+}
+
 /* Header
 ----------------------------------------------------- */
 
