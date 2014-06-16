@@ -432,8 +432,7 @@ li.ping,
 #menu-primary .menu-toggle:hover,
 #menu-primary li.current-menu-item > a,
 #menu-primary li a:hover,
-#menu-secondary li li a:hover,
-#menu-sub-terms li a {
+#menu-secondary li li a:hover {
     color: #584338;
 }
 
