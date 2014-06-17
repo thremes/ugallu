@@ -18,9 +18,17 @@
 abstract class Ugallu
 {
     /**
-     * After Setup Theme
+     * The Default Setup Entry
      */
     static function setup()
+    {
+        add_action( 'after_setup_theme', array( __CLASS__, 'after_setup_theme' ) );
+    }
+
+    /**
+     * After Setup Theme
+     */
+    static function after_setup_theme()
     {
         add_theme_support( 'custom-background', array(
             'default-color' => '3c3a3a',
@@ -32,7 +40,8 @@ abstract class Ugallu
         ) );
 
         add_filter( 'theme_mod_color_primary', array( __CLASS__, 'color_primary' ) );
-        add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 95 );
+        add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 96 );
+
         add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ) );
     }
 
@@ -64,4 +73,4 @@ abstract class Ugallu
 }
 
 // Setup
-add_action( 'after_setup_theme', array( 'Ugallu', 'setup' ) );
+Ugallu::setup();
