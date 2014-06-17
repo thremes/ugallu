@@ -17,17 +17,10 @@
  */
 abstract class Ugallu
 {
-    static function setup()
-    {
-        add_action( 'after_setup_theme', array( __CLASS__, 'after_setup_theme' ) );
-        add_filter( 'theme_mod_color_primary', array( __CLASS__, 'color_primary' ) );
-        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ) );
-    }
-
     /**
      * After Setup Theme
      */
-    static function after_setup_theme()
+    static function setup()
     {
         add_theme_support( 'custom-background', array(
             'default-color' => '3c3a3a',
@@ -38,7 +31,9 @@ abstract class Ugallu
             'default-text-color' => '584338',
         ) );
 
+        add_filter( 'theme_mod_color_primary', array( __CLASS__, 'color_primary' ) );
         add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 95 );
+        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ) );
     }
 
     /**
@@ -59,7 +54,7 @@ abstract class Ugallu
     }
 
     /**
-     * If the color is `fcf9f4`, return an empty string for the background color.
+     * If the color is empty or `fcf9f4`, return the color 'eee8df' for the background color.
      */
     function background_color( $color )
     {
@@ -69,4 +64,4 @@ abstract class Ugallu
 }
 
 // Setup
-Ugallu::setup();
+add_action( 'after_setup_theme', array( 'Ugallu', 'setup' ) );
