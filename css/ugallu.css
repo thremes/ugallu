@@ -1,0 +1,81 @@
+/* General
+----------------------------------------------------- */
+
+body {
+    border-bottom-width: 6px;
+    border-top-width: 6px;
+}
+
+body.custom-colors {
+    border-color: #584338;
+}
+
+body.woocommerce-demo-store {
+    margin-top: 37px;
+}
+
+/* Menu Primary
+----------------------------------------------------- */
+
+#menu-primary,
+#menu-primary .search-form > div {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F1E3CC), color-stop(100%, #FCF9F4));
+    background-image: -webkit-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: -moz-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: -o-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: linear-gradient(top, #F1E3CC, #FCF9F4);
+}
+
+@media only screen and (min-width: 800px) {
+    #menu-primary li a,
+    #menu-primary li li a {
+        font-size: 0.85rem;
+    }
+
+    #menu-primary .search-form .toggle::before {
+        font-size: 20px;
+    }
+}
+
+/* Header
+----------------------------------------------------- */
+
+#header {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F1E3CC), color-stop(100%, #FCF9F4));
+    background-image: -webkit-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: -moz-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: -o-linear-gradient(top, #F1E3CC, #FCF9F4);
+    background-image: linear-gradient(top, #F1E3CC, #FCF9F4);
+}
+
+/* Menu Secondary
+----------------------------------------------------- */
+
+@media only screen and (min-width: 800px) {
+    #menu-secondary li a,
+    #menu-secondary li li a {
+        font-size: 0.85rem;
+    }
+}
+
+/* Subsidiary
+----------------------------------------------------- */
+
+#sidebar-subsidiary {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FCF9F4), color-stop(100%, #F1E3CC));
+    background-image: -webkit-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: -moz-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: -o-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: linear-gradient(top, #FCF9F4, #F1E3CC);
+}
+
+/* Footer
+----------------------------------------------------- */
+
+#footer {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FCF9F4), color-stop(100%, #F1E3CC));
+    background-image: -webkit-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: -moz-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: -o-linear-gradient(top, #FCF9F4, #F1E3CC);
+    background-image: linear-gradient(top, #FCF9F4, #F1E3CC);
+}

@@ -12,65 +12,31 @@
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-/**
- * Class Ugallu
+/*
+ * Your Main Theme Setup is loaded right here. It's the perfect
+ * place for that features that are stable enough and do not
+ * change too much.
  */
-abstract class Ugallu
+require_once( 'inc/ugallu.php' );
+Ugallu::get_instance();
+
+/*
+ * Your Custom Theme setup starts right here. So play with it
+ * as usual. Once some features are done, tested and stable
+ * enough you can move them to the Main Theme Setup that was
+ * loaded right before.
+ *
+ * This approach is fine 'cause you can keep this file clean
+ * and easy to read. Touch the Main Theme Setup only when
+ * really necessary. It's the perfect math to keep your
+ * child theme stable while doing experiments live for our clients.
+ */
+add_action( 'after_setup_theme', 'stargazer_child_setup' );
+
+/**
+ * The Custom Theme Setup
+ */
+function stargazer_child_setup()
 {
-    /**
-     * The Default Setup Entry
-     */
-    static function setup()
-    {
-        add_action( 'after_setup_theme', array( __CLASS__, 'after_setup_theme' ) );
-    }
-
-    /**
-     * After Setup Theme
-     */
-    static function after_setup_theme()
-    {
-        add_theme_support( 'custom-background', array(
-            'default-color' => '3c3a3a',
-        ) );
-
-        add_theme_support( 'custom-header', array(
-            'default-image'      => '',
-            'default-text-color' => '584338',
-        ) );
-
-        add_filter( 'theme_mod_color_primary', array( __CLASS__, 'color_primary' ) );
-        add_filter( 'theme_mod_background_color', array( __CLASS__, 'background_color' ), 96 );
-
-        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ) );
-    }
-
-    /**
-     * Color Primary
-     */
-    static function color_primary( $hex )
-    {
-        return $hex ? $hex : 'a82626';
-    }
-
-    /**
-     * Enqueue Fonts
-     */
-    static function enqueue_fonts()
-    {
-        wp_enqueue_style( 'google-fonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
-        wp_enqueue_style( 'google-fonts-yellowtail', 'http://fonts.googleapis.com/css?family=Yellowtail' );
-    }
-
-    /**
-     * If the color is empty or `fcf9f4`, return the color 'eee8df' for the background color.
-     */
-    function background_color( $color )
-    {
-        return in_array( $color, array( '', 'fcf9f4' ) ) ? 'eee8df' : $color;
-    }
 
 }
-
-// Setup
-Ugallu::setup();
