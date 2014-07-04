@@ -11,6 +11,10 @@ body.custom-colors {
 }
 
 body.woocommerce-demo-store {
+    margin-top: 42px;
+}
+
+body.woocommerce-demo-store.admin-bar {
     margin-top: 37px;
 }
 
