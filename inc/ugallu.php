@@ -18,7 +18,7 @@ final class Ugallu
     /**
      * Get the instance.
      *
-     * @return Stargazer_Child
+     * @return Ugallu
      */
     static function get_instance()
     {
