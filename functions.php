@@ -31,12 +31,12 @@ Ugallu::get_instance();
  * really necessary. It's the perfect math to keep your
  * child theme stable while doing experiments live for our clients.
  */
-add_action( 'after_setup_theme', 'stargazer_child_setup' );
+add_action( 'after_setup_theme', 'ugallu_setup' );
 
 /**
  * The Custom Theme Setup
  */
-function stargazer_child_setup()
+function ugallu_setup()
 {
 
 }
