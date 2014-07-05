@@ -59,20 +59,20 @@ final class Ugallu
     }
 
     /**
+     * If the color is empty or `fcf9f4`, return the color 'eee8df' for the background color.
+     */
+    function background_color( $color )
+    {
+        return in_array( $color, array( '', 'fcf9f4' ) ) ? 'eee8df' : $color;
+    }
+
+    /**
      * Enqueue Fonts
      */
     function enqueue_fonts()
     {
         wp_enqueue_style( 'google-fonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
         wp_enqueue_style( 'google-fonts-yellowtail', 'http://fonts.googleapis.com/css?family=Yellowtail' );
-    }
-
-    /**
-     * If the color is empty or `fcf9f4`, return the color 'eee8df' for the background color.
-     */
-    function background_color( $color )
-    {
-        return in_array( $color, array( '', 'fcf9f4' ) ) ? 'eee8df' : $color;
     }
 
 }
