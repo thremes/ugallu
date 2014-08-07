@@ -6,15 +6,15 @@
  *
  * @package    Ugallu
  * @version    0.1.0
- * @author     Thiago Senna <thiago@nuvempress.com.br>
+ * @author     Thiago Senna <thiago@thremes.com.br>
  * @copyright  Copyright (c) 2014, Thiago Senna
- * @link       https://github.com/nuvempress/ugallu
+ * @link       https://github.com/thremes/ugallu
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 /*
  * Your Main Theme Setup is loaded right here. It's the perfect
- * place for that features that are stable enough and do not
+ * place for features that are stable enough and do not
  * change too much.
  */
 require_once( 'inc/ugallu.php' );
@@ -29,7 +29,7 @@ Ugallu::get_instance();
  * This approach is fine 'cause you can keep this file clean
  * and easy to read. Touch the Main Theme Setup only when
  * really necessary. It's the perfect math to keep your
- * child theme stable while doing experiments live for our clients.
+ * child theme stable while doing experiments live.
  */
 add_action( 'after_setup_theme', 'ugallu_setup' );
 
