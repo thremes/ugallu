@@ -3,16 +3,18 @@
  * Theme URI:   https://github.com/thremes/ugallu
  * Description: A fun child theme for the Stargazer parent theme.
  *
- * Version:     0.1.5.02
+ * Version:     0.1.5.03
  * Author:      Thiago Senna
  * Author URI:  http://thremes.com.br
- *
  * Tags:        one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, theme-options, threaded-comments
+ *
+ * Template:    stargazer
+ *
+ * GitHub Theme URI: https://github.com/thremes/ugallu
+ * GitHub Branch:    develop
  *
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Template:    stargazer
  */
 
 @import "css/fun/2.1-font-family.css";
