@@ -115,6 +115,8 @@ select,
 .media-shortcode-extend .media-info,
 .media-info-toggle,
 .entry-content .media-info-toggle,
+.media-info-toggle:hover,
+.media-info-toggle:focus,
 .wp-audio-shortcode.mejs-container,
 .mejs-controls,
 .mejs-volume-button .mejs-volume-slider,
@@ -235,12 +237,14 @@ select:focus {
     background: #D6D1C9
 }
 
-#menu-primary .menu-toggle {
+#menu-primary .menu-toggle button {
     color: #584338
 }
 
 #menu-primary li a,
-#menu-secondary li li a {
+#menu-secondary li li a,
+#menu-primary .menu-toggle button:hover,
+#menu-primary .menu-toggle button:focus {
     color: #7F726B
 }
 
@@ -254,6 +258,12 @@ select:focus {
     #menu-secondary li a {
         color: #7F726B;
         background: #EEE8DF;
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-secondary .menu-toggle button {
+        color:        #EEE8DF;
+        background:   #584338;
         border-color: rgba(0, 0, 0, 0.1);
     }
 
@@ -403,6 +413,15 @@ li.ping,
     #menu-primary .search-form .toggle:hover::before {
         color: #584338
     }
+
+    #menu-primary .search-form .search-toggle::before {
+        color: #7F726B
+    }
+
+    #menu-primary .search-toggle:hover::before,
+    #menu-primary .search-toggle:focus::before {
+        color: #7F726B
+    }
 }
 
 /* =/=/=/=/=/= End fun zone. =/=/=/=/=/= */
@@ -435,5 +454,7 @@ li.ping,
 #menu-secondary li li a:hover {
     color: #584338;
 }
+
+#menu-primary .menu-toggle button:hover
 
 /* =/=/=/=/=/= End colors danger zone. =/=/=/=/=/= */
