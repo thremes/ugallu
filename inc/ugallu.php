@@ -71,8 +71,8 @@ final class Ugallu
      */
     function enqueue_fonts()
     {
-        wp_enqueue_style( 'google-fonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
-        wp_enqueue_style( 'google-fonts-yellowtail', 'http://fonts.googleapis.com/css?family=Yellowtail' );
+        wp_enqueue_style( 'google-fonts-pt-sans', '//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' );
+        wp_enqueue_style( 'google-fonts-yellowtail', '//fonts.googleapis.com/css?family=Yellowtail' );
     }
 
 }

@@ -15,3 +15,8 @@ Ugallu is a child theme of Stargazer. You must have it installed to use this the
 * [Entry Views](http://themehybrid.com/plugins/entry-views) by ThemeHybrid
 * [Grid Columns](http://themehybrid.com/plugins/grid-columns) by ThemeHybrid
 * [Whistles](http://themehybrid.com/plugins/whistles) by ThemeHybrid
+
+## Image Credits
+
+By [Unsplash](http://unsplash.com/), licensed under [CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/)
+* [Image used in screenshot](https://s3.amazonaws.com/ooomf-com-files/apx8EPiSnWoYHSEiUENI_14553734675_699b2aa038_o.jpg) by Daniel Robert P
